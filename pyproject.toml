@@ -1,0 +1,17 @@
+[project]
+name = "newtestpackage"
+version = "0.1.0"
+description = "Test Package for python"
+readme = "README.md"
+authors = [
+    { name = "Andre Penn", email = "mutapenn@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = ["rich>=1.0"]
+
+[project.scripts]
+newtestpackage = "newtestpackage.cli:hello"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
